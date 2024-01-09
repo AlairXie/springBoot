@@ -1,5 +1,6 @@
 package com.example.springboot;
 
+import com.example.springboot.Entity.Car;
 import com.example.springboot.Entity.Dog;
 import com.example.springboot.Entity.Person;
 import com.example.springboot.config.BeanConfig;
@@ -31,6 +32,8 @@ public class Application {
         Person person01 = bean.person();
         Person person02 = bean.person();
         System.out.println(person01==person02);
+
+
 
     }
 
