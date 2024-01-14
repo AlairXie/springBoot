@@ -24,3 +24,10 @@ person:
       - {name: tom}
       - {name: jerry,weight: 47}
     health: [{name: mario,weight: 47}]
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: '*'
