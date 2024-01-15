@@ -63,6 +63,19 @@ spring:
 #          config:
 #            drop-table-allow: false
 
+  redis:
+#    database: ${redis.database}
+    host: 127.0.0.1
+    port: 6379
+    password: redis@123
+    pool:
+      max-active: 200
+      max-wait: 10
+      max-idle: 100
+      min-idle: 10
+    timeout: 5000
+
+
 logging:
   level:
     root: INFO

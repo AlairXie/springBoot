@@ -3,6 +3,7 @@ package com.example.springboot.controller;
 import com.example.springboot.Entity.Car;
 import com.example.springboot.Entity.Person;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -22,6 +23,10 @@ public class HelloController {
 
     @Autowired
     JdbcTemplate jdbcTemplate;
+
+    @Autowired
+    StringRedisTemplate redisTemplate;
+
 
     @GetMapping("/")
     public String hello(){
